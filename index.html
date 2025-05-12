@@ -45,19 +45,19 @@
                 </p>
                 <ul>
                     <li>
-                        Save and track changes: Every modification made to the codebase is
+                        <strong>Save and track changes:</strong> Every modification made to the codebase is
                         recorded.
                     </li>
                     <li>
-                        Revert to previous versions: If something breaks or a feature
+                        <strong>Revert to previous versions:</strong> If something breaks or a feature
                         doesn't work as expected, you can revert to a stable version.
                     </li>
                     <li>
-                        Collaborate: Multiple developers can work on the same project
+                        <strong>Collaborate:</strong> Multiple developers can work on the same project
                         without overwriting each other's work.
                     </li>
                     <li>
-                        Branching and Merging: Developers can create branches for different
+                        <strong>Branching and Merging:</strong> Developers can create branches for different
                         features, work on them independently, and merge them back to the
                         main codebase when ready.
                     </li>
@@ -65,28 +65,28 @@
                 <h3>Other Version Control Systems:</h3>
                 <ol>
                     <li>
-                        Mercurial (Hg) - A distributed version control system similar to
+                        <strong>Mercurial (Hg)</strong> - A distributed version control system similar to
                         Git, known for its simplicity and efficiency.
                     </li>
                     <li>
-                        Subversion (SVN) - A centralized version control system used in
+                        <strong>Subversion (SVN)</strong> - A centralized version control system used in
                         enterprise environments.
                     </li>
                     <li>
-                        Perforce - A high-performance version control system often used in
+                        <strong>Perforce</strong> - A high-performance version control system often used in
                         game development and large-scale projects.
                     </li>
                     <li>
-                        Bazaar - A flexible version control system that supports both
+                        <strong>Bazaar</strong> - A flexible version control system that supports both
                         distributed and centralized workflows.
                     </li>
 
                     <p>
-                        In this blog, I'll be focusing primarily on Git and GitHub, which
+                        In this blog, we'll be focusing primarily on Git and GitHub, which
                         are among the most popular tools for version control and
-                        collaboration. While other version control systems like Mercurial
-                        and Subversion exist, Git stands out due to its wide adoption and
-                        integration with platforms like GitHub.
+                        collaboration. While other version control systems like <em>Mercurial</em>
+                        and <em>Subversion</em> exist, Git stands out due to its wide adoption and
+                        integration with platforms like <em>GitHub</em>.
                     </p>
                 </ol>
             </li>
@@ -102,7 +102,7 @@
                         rel="noopener noreferrer">free
                         and open source</a> distributed version control system. You can download Git for free from <a
                         href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git-scm.com</a></p>
-                <h3>Steps</h3>
+                <h3>Steps for installing</h3>
                 <ul>
                     <li>Download and run the installer.</li>
                     <li>Click “Next” to accept the recommended settings.</li>
@@ -121,46 +121,61 @@
         <div>
             <li>
                 <h2>Configuring Git</h2>
-                <p>Next, configure Git with your identity</p>
+                <p>Next, configure Git with your identity.</p>
                 <p>This step is essential because Git uses these details to label each commit you make.</p>
                 <ol type="I">
                     <li>
                         <h3>User Name</h3>
                     </li>
                     <p>Your name will be added to each change you save (commit) in Git.</p>
-                    <p><span><strong>NOTE:</strong></span> If you make a mistake while typing your name or email, don’t
-                        worry! Just type the command again with the right details — this will replace and update the
-                        previous one.</p>
+                    <p><span><strong>NOTE:</strong></span> If you make a mistake while typing your name or email, don'tworry! Just type the command again with the right details — this will replace and update theprevious one.</p>
                     <p>Set it with the following command.</p>
-                    <img src="./Assets/git_username_1.PNG" alt="Git Username setup command">
+                    <figure>
+                        <img src="./Assets/git_username_1.PNG" alt="Git Username setup command">
+                        <figcaption>Git Username setup command</figcaption>
+                    </figure>
                     <p>In place of "Your Name", replace with the name you want to use, <Strong>Eg. </Strong>johnDoe</p>
-                    <img src="./Assets/git_username_2.PNG" alt="Git username setup command">
+                    <figure>
+                        <img src="./Assets/git_username_2.PNG" alt="Git username setup command">
+                        <figcaption>Git username setup command</figcaption>
+                    </figure>
                     <p>To view the changes you made, run the following command:</p>
-                    <img src="./Assets/git_username_3.PNG" alt="View Git username">
+                    <figure>
+                        <img src="./Assets/git_username_3.PNG" alt="View Git username">
+                        <figcaption>View Git username</figcaption>
+                    </figure>
 
                     <li>
                         <h3>Email Address</h3>
                     </li>
                     <p>Your email is also attached to each commit you make.</p>
                     <p>Set it with the following command.</p>
-                    <img src="./Assets/git_email_1.PNG" alt="Git email setup command">
+                    <figure>
+                        <img src="./Assets/git_email_1.PNG" alt="Git email setup command">
+                        <figcaption>Git email setup command</figcaption>
+                    </figure>
                     <p>In place of "you@example.com", replace with the email you want to use, <strong>Eg.
                         </strong>johndoe@gmail.com</p>
-                    <img src="./Assets/git_email_2.PNG" alt="Git email setup command">
+                    <figure>
+                        <img src="./Assets/git_email_2.PNG" alt="Git email setup command">
+                        <figcaption>Git email setup command</figcaption>
+                    </figure>
                     <p>To view the changes you made, run the following command:</p>
-                    <img src="./Assets/git_email_3.PNG" alt="View Git email">
+                    <figure>
+                        <img src="./Assets/git_email_3.PNG" alt="View Git email">
+                        <figcaption>View Git email</figcaption>
+                    </figure>
                     <li>
                         <h3>Default Editor</h3>
                     </li>
-                    <p>When Git requires you to enter a message for a commit or a merge, it opens a text editor. You can
-                        set
-                        your preferred editor using:</p>
-                    <img src="./Assets/git_editor.PNG" alt="Set up Default editor">
-                    <p>In the command above, code --wait tells Git to open Visual Studio Code as the editor. You can
+                    <p>When Git requires you to enter a message for a commit or a merge, it opens a text editor(by default it opens Vim). You can set your preferred editor using:</p>
+                    <figure>
+                        <img src="./Assets/git_editor.PNG" alt="Set up Default editor">
+                        <figcaption>Set up Default editor</figcaption>
+                    </figure>
+                    <p>In the command above, <em>code --wait</em> tells Git to open Visual Studio Code as the editor. You can
                         change
-                        this to match your favorite editor—like nano, vim, or notepad—depending on what you’re
-                        comfortable
-                        using.</p>
+                        this to match your favorite editor—like nano, vim, or notepad—depending on what you're comfortable using.</p>
                 </ol>
             </li>
         </div>
@@ -172,8 +187,11 @@
                 <ol type="a">
                     <li>Navigate to your project folder in the terminal.</li>
                     <li>Initialize Git in the project folder by running:</li><br>
-                    <img src="./Assets/git_init.PNG" alt="Git init command">
-                    <p>Running this command, Git creates a hidden folder called .git inside your project.</p>
+                    <figure>
+                        <img src="./Assets/git_init.PNG" alt="Git init command">
+                        <figcaption>Git initializing command</figcaption>
+                    </figure>
+                    <p>Running this command, Git creates a hidden folder called <em>.git</em> inside your project.</p>
                     <p>This is where Git stores all the information it needs to track your files and history.</p>
                 </ol>
                 </p>
@@ -183,8 +201,7 @@
         <div>
             <li>
                 <h2>Adding files to the staging area</h2>
-                <p>To start tracking files, you need to stage them. This moves the files into a "staging area" before
-                    committing them:</p>
+                <p>To start tracking files, you need to stage them. This moves the files into a "staging area" before committing them:</p>
                 <p>Here are some key commands for staging:</p>
                 <figure>
                     <img src="./Assets/git_add.PNG" alt="Git add commands.">
@@ -207,17 +224,23 @@
                 <p>A <strong>commit</strong> is like a save point in your project.</p>
                 <p>It records a snapshot of your files at a certain time, with a message describing what changed.</p>
                 <p>You commit by running the following command:</p>
-                <img src="./Assets/git_commit_1.PNG" alt="Git commit">
+                <figure>
+                    <img src="./Assets/git_commit_1.PNG" alt="Git commit command">
+                    <figcaption>Git commit command</figcaption>
+                </figure>
                 <h3>Write Multi-line Commit Messages</h3>
-                <p>You can write multi-line commit messages. If you just type <em>git commit</em> (no -m), your default
-                    editor will open so you can write a detailed, multi-line message</p>
-                <p>For my case, running <em>git commit</em> opens up <em>Visual Studio</em> for writing a detailed
-                    commit
-                    message.</p>
-                <img src="./Assets/git_commit_2.PNG" alt="Git commit">
+                <p>You can write multi-line commit messages. If you just type <em>git commit</em> (no -m), your default editor will open so you can write a detailed, multi-line message</p>
+                <p>For my case, running <em>git commit</em> opens up <em>Visual Studio</em> for writing a detailed commit message.</p>
+                <figure>
+                    <img src="./Assets/git_commit_2.PNG" alt="Git commit">
+                    <figcaption>Git commit</figcaption>
+                </figure>
                 <h3>View Commit History (git log)</h3>
                 <p>To view the history of commits for a repository, you can use the git log command:</p>
-                <img src="./Assets/git_commit_3.PNG" alt="Git Log">
+                <figure>
+                    <img src="./Assets/git_commit_3.PNG" alt="Git Log history">
+                    <figcaption>Git Log history</figcaption>
+                </figure>
             </li>
         </div>
 
@@ -229,9 +252,9 @@
                     affecting the main project.</p>
                 <h3>Why Use Branches?</h3>
                 <ol type="i">
-                    <li>Developing a new feature</li>
-                    <li>Fixing a bug</li>
-                    <li>Experimenting with ideas</li>
+                    <li>Developing a new feature.</li>
+                    <li>Fixing a bug.</li>
+                    <li>Experimenting with ideas.</li>
                 </ol>
             </li>
         </div>
@@ -240,17 +263,23 @@
             <li>
                 <h2>Creating a branch</h2>
                 <p>To create a new branch, run the following command:</p>
-                <img src="./Assets/git_branch_1.PNG" alt="Git branch command">
-                <p>Now we created a new branch called "songs".</p>
+                <figure>
+                    <img src="./Assets/git_branch_1.PNG" alt="Git branch command">
+                    <figcaption>Git branch command</figcaption>
+                </figure>
+                <p>We now created a new branch called "songs".</p>
             </li>
         </div>
 
         <div>
             <li>
                 <h2>Viewing all branches</h2>
-                <p>To see we have created a branch and list all branches, run the following command:</p>
-                <img src="./Assets/git_branch_2.PNG" alt="List all branches">
-                <p>The * mark shows the current active position of the branch (HEAD).</p>
+                <p>To see if we have created a branch and listed all branches, run the following command:</p>
+                <figure>
+                    <img src="./Assets/git_branch_2.PNG" alt="List all branches">
+                    <figcaption>List all branches</figcaption>
+                </figure>
+                <p>The <strong>*</strong> mark shows the current active position of the branch (HEAD).</p>
             </li>
         </div>
 
@@ -258,28 +287,36 @@
             <li>
                 <h2>Switching active branches</h2>
                 <p><em>checkout</em> and <em>switch</em> is the command used to switch between a branch.</p>
-                <img src="./Assets/git_switch.PNG" alt="Git switch command">
+                <figure>
+                    <img src="./Assets/git_switch.PNG" alt="Git switch command">
+                    <figcaption>Git switch command</figcaption>
+                </figure>
                 <p><span><strong>NOTE:</strong> </span>We can create and switch to a new branch at the same time.</p>
                 <p>To achieve that, run the following command:</p>
-                <img src="./Assets/git_switch_2.PNG" alt="Git create switch new branch">
+                <figure>
+                    <img src="./Assets/git_switch_2.PNG" alt="Git create and switch new branch">
+                    <figcaption>Git create and switch to new branch</figcaption>
+                </figure>
                 <p>Here, we have created a new branch and switched to it using a single command. </p>
-                <p>Running <em>git branch</em>, we can see that a new branch called music was created and has a * mark
-                    besides it showing it's the active branch.</p>
+                <p>Running <em>git branch</em>, we can see that a new branch called <em>music</em> was created and has a * mark besides it showing it's the active branch.</p>
             </li>
         </div>
 
         <div>
             <li>
                 <h2>Merging a branch</h2>
-                <p>Merging in Git means combining the changes from one branch into another. This helps bring in your
-                    current work into the main branch after working on various changes and features.</p>
-                <p>To achieve this, we first switch to the master/main branch. We then merge the desired branch to
-                    master/main branch using the following command:</p>
-                <img src="./Assets/git_merge.PNG" alt="">
+                <p>Merging in Git means combining the changes from one branch into another. This helps bring in your current work into the main branch after working on various changes and features.</p>
+                <p>To achieve this, we first switch to the master/main branch. We then merge the desired branch to master/main branch using the following command:</p>
+                <figure>
+                    <img src="./Assets/git_merge.PNG" alt="Git merge command">
+                    <figcaption>Git merge command</figcaption>
+                </figure>
                 <h3>Aborting a Merge (git merge --abort)</h3>
-                <p>If you run into trouble during a merge (like a conflict you don't want to resolve), you can cancel
-                    the merge and go back to how things were before with git merge --abort.</p>
-                <img src="./Assets/git_merge_abort.PNG" alt="Abort a merge">
+                <p>If you run into trouble during a merge (like a conflict you don't want to resolve), you can cancel the merge and go back to how things were before with git merge --abort.</p>
+                <figure>
+                    <img src="./Assets/git_merge_abort.PNG" alt="Abort a merge">
+                    <figcaption>Abort a merge</figcaption>
+                </figure>
             </li>
         </div>
 
@@ -287,7 +324,10 @@
             <li>
                 <h2>Deleting a branch</h2>
                 <p>After a successful merge of a branch, when you're done with the branch, you can delete it.</p>
-                <img src="./Assets/git_branch_delete.PNG" alt="Delete a branch">
+                <figure>
+                    <img src="./Assets/git_branch_delete.PNG" alt="Delete a branch">
+                    <figcaption>Delete a branch</figcaption>
+                </figure>
                 <p>This deletes the branch named music (if it's already merged).</p>
             </li>
         </div>
@@ -295,9 +335,7 @@
         <div>
             <li>
                 <h2>Next steps</h2>
-                <p>In this blog we have only the basic of Git. You should find extra resources and tutorials to advance
-                    your
-                    skills. Here are some of the key area you'd like to look at:</p>
+                <p>In this blog we have only covered the basic of Git. You should find extra resources and tutorials to advance your skills. Here are some of the key area you'd like to look at:</p>
                 <h3>Git push operation</h3>
                 <p>The git push command is used to push the commits from our local branch to the relevant branch on the
                     remote repository.</p>
@@ -306,8 +344,7 @@
                 <p>This command is used to clone a remote repository into our local machines.</p>
                 <p>git clone (remote url)</p>
                 <h3>Git Tagging Operation</h3>
-                <p>Git tags are used to highlight significant events in a project's history. They are usually associated
-                    with releases (like v1.0.2, v2.1.0) or milestones in the development of a project.</p>
+                <p>Git tags are used to highlight significant events in a project's history. They are usually associated with releases (like v1.0.2, v2.1.0) or milestones in the development of a project.</p>
                 <ul type="square">
                     <li><strong>Lightweight tags:</strong> Eg. git tag (tagName) </li>
                     <li><strong>Annotated tags: </strong>Eg. git tag -a (tag-name) -m "Tag message"</li>
@@ -320,13 +357,16 @@
         <div>
             <li>
                 <h2>Deploy your page</h2>
-                <p>Go to your github account and create a repository. Give it a suitable name. You can choose to add a
-                    READme file and license type.</p>
-                <img src="./Assets/git_push_1.PNG" alt="Creating a repositoy">
-                <p>After you are done creating, navigate to the bottom of the page and find the below code. Copy it line
-                    by
-                    line and run them in the terminal. This will push and update your files to Github.</p>
-                <img src="./Assets/git_push_2.PNG" alt="Git push code">
+                <p>Go to your github account and create a repository. Give it a suitable name. You can choose to add a READme file and license type.</p>
+                <figure>
+                    <img src="./Assets/git_push_1.PNG" alt="Creating a repositoy">
+                    <figcaption>Creating a repositoy</figcaption>
+                </figure>
+                <p>After you are done creating, navigate to the bottom of the page and find the below code. Copy it line by line and run them in the terminal. This will push and update your files to Github.</p>
+                <figure>
+                    <img src="./Assets/git_push_2.PNG" alt="Git push code">
+                    <figcaption>Git push code</figcaption>
+                </figure>
             </li>
         </div>
 
